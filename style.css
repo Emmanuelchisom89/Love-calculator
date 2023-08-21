@@ -6,10 +6,6 @@
     box-sizing: border-box;
     padding: 0;
 }
-html{
-    white-space: nowrap;
-}
-
 body {
     background-color: pink;
     width: 100%;
@@ -138,6 +134,10 @@ footer {
     }
 
         section {
+            width: 90%;
+        }
+
+        .comment {
             width: 100%;
         }
 
@@ -146,7 +146,7 @@ footer {
         margin-bottom: 1.5rem;
         margin-top: 0;
      font-style: italic;
- font-size: 16px;
+ font-size: 17px;
 
 }
 
