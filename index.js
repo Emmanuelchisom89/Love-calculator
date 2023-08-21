@@ -50,7 +50,7 @@ function randomNumberCountUp(element, _stopNum) {
 }
 
 const countUp = (element, count, stopNum) => {
-  element.innerHTML = count;
+  element.innerHTML = count + "%";
 
   if (count < stopNum) {
     setTimeout(() => countUp(element, count + 1, stopNum), 20);
