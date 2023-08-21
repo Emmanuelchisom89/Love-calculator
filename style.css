@@ -6,6 +6,9 @@
     box-sizing: border-box;
     padding: 0;
 }
+html{
+    white-space: nowrap;
+}
 
 body {
     background-color: pink;
@@ -115,8 +118,7 @@ button:hover {
     cursor: pointer;
     opacity: 0.85;
     transform: scale(1.05);
-/*     transform: translate(30px, 20px) rotate(20deg);
- */}
+ }
 
 footer {
     text-align: center;
@@ -125,7 +127,7 @@ footer {
     margin-top: 2.5rem;
 }
 
- @media screen and (max-width: 576px) {
+ @media screen and (min-width: 300px) and (max-width: 576px) {
     header {
         padding: 2rem;
     }
@@ -135,16 +137,24 @@ footer {
         font-size: 30px;
     }
 
-        .h2 {
-            color: #333;
-            margin-bottom: 1.5rem;
-            margin-top: 0;
-            vertical-align: middle;
-            max-width: 80%;
+        section {
+            width: 100%;
         }
-    .comment {
-        max-width: 85%;
-    }    
+
+    .h2 {
+        color: #333;
+        margin-bottom: 1.5rem;
+        margin-top: 0;
+     font-style: italic;
+ font-size: 16px;
+
+}
+
+ .name_style {
+     font-size: 17px;
+     font-weight: bold;
+     color: #ff4c68;
+ }
 
      .p {
         margin-top: 6rem;

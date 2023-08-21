@@ -12,8 +12,6 @@ let loveCalculator = () => {
   if (!name1 || !name2) {
     loveScore.innerHTML = " Please input names and try again!";
   } else {
-    //  name1.classList.add("name_style");
-    // name2.classList.add("name_style");
     name1 = '<span class="name_style">' + name1 + "</span>";
     name2 = `<span class="name_style">${name2}</span>`;
 
@@ -50,7 +48,7 @@ function randomNumberCountUp(element, _stopNum) {
 }
 
 const countUp = (element, count, stopNum) => {
-  element.innerHTML = count;
+  element.innerHTML = count + "%";
 
   if (count < stopNum) {
     setTimeout(() => countUp(element, count + 1, stopNum), 20);
